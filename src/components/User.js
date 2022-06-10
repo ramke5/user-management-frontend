@@ -21,14 +21,14 @@ export default function User() {
         })
     }
 
-    useEffect(()=>{
-        fetch("http://localhost:8080/user/getAll")
-        .then(res=>res.json())
-        .then((result)=>{
-            setUsers(result);
-        }
-    )
-    }, [])
+    // useEffect(()=>{
+    //     fetch("http://localhost:8080/user/getAll")
+    //     .then(res=>res.json())
+    //     .then((result)=>{
+    //         setUsers(result);
+    //     }
+    // )
+    // }, [])
 
   return (
     <Container>
@@ -57,7 +57,7 @@ export default function User() {
         </Box>
         </Paper>
 
-        <Paper elevation={3} style={paperStyle}>
+        {/* <Paper elevation={3} style={paperStyle}>
             {users.map(user=>(
                 <Paper elevation={6} style={{margin:"10px", padding:"15px", textAlign:"left"}} key={user.id}>
                     Id: {user.id} <br/>
@@ -66,7 +66,7 @@ export default function User() {
                 </Paper>
             ))}
 
-        </Paper>
+        </Paper> */}
     </Container>
   );
 }
