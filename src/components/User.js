@@ -12,7 +12,7 @@ export default function User() {
     const handleClick=(e)=>{
         e.preventDefault()
         const user={name, address}
-        fetch("http://localhost:8080/user/add", {
+        fetch("http://178.62.253.105:8080/user/add", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body:JSON.stringify(user)
